@@ -8,6 +8,7 @@ body {
     font-family: 'Vardana',sans-serif;
     font-size: 14px;
     margin: 0;
+    background-color: #f5f5f1;
 }
 img {
     width: 100%;
@@ -36,7 +37,7 @@ li {
 
 .header-inner {
     position: relative;
-    background-color: #6f4e37;
+    background-color: #555d50;
 } 
 .logo-img {
     width: 180px;
@@ -52,8 +53,8 @@ li {
 }
 .slide-menu-contents {
     display: none;
-    display: absolute;
-    top: 0;
+    position: absolute;
+    top: 54px;
     left: 0;
     padding: 20px 0 35px;
     background: rgba(0,0,0,0.9);
@@ -71,6 +72,9 @@ li {
     padding: 25px 0;
     font-size: 14px;
 }
+.slide-menu-contents .menu-list a:hover {
+    opacity: 0.75;
+}
 .slide-menu-contents .menu-list a::after {
     content: "";
     position: absolute;
@@ -80,7 +84,7 @@ li {
     width: 8px;
     height: 2px;
     margin-left: -2px;
-    background-color: #444c38;
+    background-color: #555d50;
 }
 .slide-menu-contents .menu-list li:last-child a::after {
     content: "";
@@ -142,6 +146,7 @@ li {
     margin: 20px auto;
 }
 .main-copy {
+    padding: 40px 0 20px 0;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -149,33 +154,54 @@ li {
     font-size: 25px;
     display: block;
     margin-bottom: 7px;
+    color: #555555;
 }
 .main-contents .eng {
     display: block;
+    color: #5b5b5b;
 }
+
+
+/*.game-list*/
+/*-----------------*/
+
+
+
 .game-list {
     width: 86%;
     margin: 30px auto;
     overflow: auto;
 }
-
 .game-list li {
-    float: left;
-    margin-right: 6%;
-    margin-bottom: 6%;
-    width: 47%;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 3.5px 0 rgba(0, 0, 0, 0.13);
 }
-.game-list li:nth-child(even){
-    margin-right: 0;
+.game-list li .pic {
+    width: 92%;
+    margin: 10px auto;
 }
-.game-list li:nth-child(odd) {
-    margin-right: 6%;
+.game-visual {
+    width: 92%;
+    margin: 10px auto;
 }
-.game-list .pic {
-    background-color: skyblue;
-    height: 120px;
+.game-visual img {
+    display: inline-block;
+    border-radius: 2px;
 }
-
+.game-name {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #646464;
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+}
 
 
 /*footer*/
@@ -212,6 +238,7 @@ li {
     padding: 10px 0 10px 0;
     font-size: 12px;
     text-align: center;
-    background-color: #6f4e37;
+    /*background-color: #6f4e37;*/
+    background-color: #555d50;
     color: #fff;
 }
