@@ -182,8 +182,8 @@ li {
     box-shadow: 0 3.5px 0 rgba(0, 0, 0, 0.13);
 }
 .game-list li .pic {
-    width: 92%;
     margin: 10px auto;
+    width: 92%;
 }
 .game-visual {
     width: 92%;
