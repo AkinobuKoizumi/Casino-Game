@@ -4,9 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Casino Game</title>
-        <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js" integrity="sha512-BmoWLYENsSaAfQfHszJM7cLiy9Ml4I0n1YtBQKfx8PaYpZ3SoTXfj3YiDNn0GAdveOCNbK8WqQQYaSb0CMjTHQ==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css" integrity="sha512-c7jR/kCnu09ZrAKsWXsI/x9HCO9kkpHw4Ftqhofqs+I2hNxalK5RGwo/IAhW3iqCHIw55wBSSCFlm8JP0sw2Zw==" crossorigin="anonymous" />        
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
         <div class="content-wrapper">
@@ -14,8 +17,8 @@
                 <div class="header-inner">
                     <div class="logo-img">
                         <a href="">
-                            <img class="pc">
-                            <img class="sp">
+                            <img class="pc" src="./img/Casino-icon.png">
+                            <img class="sp" src="./img/Casino-icon.png">
                         </a>
                     </div>
                     <nav>
@@ -29,10 +32,10 @@
                             <div class="slide-menu-contents">
                                 <ul class="menu-list">
                                     <li>
-                                        <a href="#">ページトップ</a>
+                                        <a href="#top">トップページ</a>
                                     </li>
                                     <li>
-                                        <a href="#">収録ゲーム一覧</a>
+                                        <a href="#trump-game">収録ゲーム一覧</a>
                                     </li>
                                     <li>
                                         <a href="#">ルールや遊び方と豆知識</a>
@@ -40,9 +43,7 @@
                                     <li>
                                         <a href="#">よくあるご質問</a>
                                     </li>
-                                    <li>
-                                        <a href="#">FAQ</a>
-                                    </li>
+
                                 </ul>
                             </div>
                         </div>
@@ -69,36 +70,58 @@
             </header>
             
             <div id="content">
-                <div class="main-visual-area">
-                    <p class="main-visual">
-                        <img class="sp" alt="" src="./img/cards-and-chips-for-poker-on-green-table_93675-72892.jpg">
-                    </p>
-                </div>
+                <section class="wrapper" id="#top">
+                    <div class="flexslider">
+                        <ul class="slides">
+                            <li>
+                                <img class="sp" alt="" src="./img/cards-and-chips-for-poker-on-green-table_93675-72892.jpg">
+                            </li>
+                            <li>
+                                <img class="sp" alt="" src="./img/cards-and-chips-for-poker-on-green-table_93675-41285.jpg">
+                            </li>
+                            <li>
+                                <img class="sp" alt="" src="./img/cards-and-chips-for-poker-on-green-table_93675-60764.jpg">
+                            </li>
+                            <li>
+                                <img class="sp" alt="" src="./img/people-playing-poker_79762-318.jpg">
+                            </li>
+                        </ul>
+                    </div> 
+                </section>
                 <div class="main-contents">
-                    <h2 class="main-copy">
-                        <span class="jpn">トランプゲーム</span>
-                        <span class="eng">trump game</span>
-                    </h2>
-                    <ul class="game-list">
-                        <li>
-                            <a class="pic" href="./Nervous-breakdown/index.html">
-                                    <div class="game-visual">
-                                        <img src="./img/card-game1.png" alt="">
+                    <section id="#trump-game">
+                        <h2 class="main-copy">
+                            <span class="jpn">トランプゲーム</span>
+                            <span class="eng">trump game</span>
+                        </h2>
+                        
+                        <ul class="game-list">
+                            <li>
+                                <a class="pic" href="./Nervous-breakdown.1/index.html">
+                                        <div class="game-visual">
+                                            <img src="./img/card-game1.png" alt="">
+                                        </div>
+                                        <h2 class="game-name">神経衰弱</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./Higher_Lower2/index.html" class="pic">
+                                    <div class="game-wrapper">
+                                        <div class="game-visual">
+                                            <img src="./img/card-game2-2.png" alt="">
+                                        </div>
+                                        <h2 class="game-name">Higher & Lower</h2>
                                     </div>
-                                    <h2 class="game-name">神経衰弱</h2>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./Higher_Lower2/index.html" class="pic">
-                                <div class="game-wrapper">
-                                    <div class="game-visual">
-                                        <img src="./img/card-game2-2.png" alt="">
-                                    </div>
-                                    <h2 class="game-name">Higher & Lower</h2>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                                </a>
+                            </li>
+                        </ul>
+                    <!--</section>-->
+                    <!--<section id="game-rule">-->
+                    <!--    <h2 class="main-copy">-->
+                    <!--        <span class="jpn">ルールや遊び方と豆知識</span>-->
+                    <!--        <span class="eng">game rule & knowledge</span>-->
+                    <!--    </h2>-->
+                    <!--</section>-->
                 </div>
                 <footer id="footer">
                     <div class="footer-inner">
@@ -106,7 +129,6 @@
                             <li>TOP</li>
                             <li>GAMES</li>
                             <li>GAME RULES</li>
-                            <li>FAQ</li>
                         </ul>
                         <ul class="footer-sns">
                             <li class="instagram">
@@ -121,7 +143,8 @@
                 </footer>
             </div>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
         <script src="./js/common.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 </html>

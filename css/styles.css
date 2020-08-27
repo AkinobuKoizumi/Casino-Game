@@ -40,8 +40,9 @@ li {
     background-color: #555d50;
 } 
 .logo-img {
-    width: 180px;
-    height: 90px;
+    width: 120px;
+    height: auto;
+    padding: 10px 0 0 10px;
 }
 
 
@@ -132,7 +133,9 @@ li {
 /*main-visual*/
 /*------------------*/
 
-
+.flexslider {
+    border-style: none;
+}
 
 .main-visual img{
     height: auto;
@@ -221,8 +224,16 @@ li {
 .footer-gnav li {
     margin: 10px 0 10px 0;
 }
+.footer-gnav li:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 .footer-sns li {
     display: inline-block;
+}
+.footer-sns li:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 .footer-sns li:first-child {
     margin-right: 10px;
@@ -241,4 +252,27 @@ li {
     /*background-color: #6f4e37;*/
     background-color: #555d50;
     color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/*タブレット向け：760px-1000px*/
+
+@media only screen and (min-width: 760px) {
+    
+    
+    .game-list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .game-list li {
+        width: 47%;
+    }
 }
